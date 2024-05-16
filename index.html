@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produto</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Cadastro de Produto - Lojas Berenice</h2>
+        <form>
+            <!-- Input Text -->
+            <div class="form-group">
+                <label for="nomeProduto">Nome do Produto</label>
+                <input type="text" class="form-control" id="nomeProduto" placeholder="Digite o nome do produto">
+            </div>
+    
+            <!-- Textarea -->
+            <div class="form-group">
+                <label for="observacaoProduto">OBS - Detalhamento do Produto</label>
+                <textarea class="form-control" id="observacaoProduto" rows="3" placeholder="Disserte sobre o produto"></textarea>
+            </div>
+    
+            <!-- Select (Combobox) -->
+            <div class="form-group">
+                <label for="tipoProduto">Tipo de Produto</label>
+                <select class="form-control" id="tipoProduto">
+                    <option>Físico</option>
+                    <option>Ebook</option>
+                    <option>Virtual</option>
+                </select>
+            </div>
+    
+            <!-- Multi Select (Checkbox) -->
+            <div class="form-group">
+                <label>Formas de Contato</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="whatsapp" id="contatoWhatsapp">
+                    <label class="form-check-label" for="contatoWhatsapp">
+                        WhatsApp
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="email" id="contatoEmail">
+                    <label class="form-check-label" for="contatoEmail">
+                        E-mail
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="carta" id="contatoCarta">
+                    <label class="form-check-label" for="contatoCarta">
+                        Carta
+                    </label>
+                </div>
+            </div>
+    
+            <!-- Radio Button -->
+            <div class="form-group">
+                <label>Status</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="statusProduto" id="statusAtivo" value="ativo" checked>
+                    <label class="form-check-label" for="statusAtivo">
+                        Ativo
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="statusProduto" id="statusInativo" value="inativo">
+                    <label class="form-check-label" for="statusInativo">
+                        Suspenso
+                    </label>
+                </div>
+            </div>
+    
+            <!-- Botão Submit -->
+            <button type="submit" class="btn btn-primary">Cadastrar Produto</button>
+        </form>
+    </div>
+    
+    
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
